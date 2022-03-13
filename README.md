@@ -431,7 +431,14 @@ document.getElementById('gld3dbbb').style.display="none";
 document.getElementById('gld3d').style.width="0%";
 ```
 
-自相矛盾的人为故障写在上方2段<style></style>中，而<div id="gld3d">和<div id="gld3dbbb">就是2个提醒界面，提醒界面的数量由你自己决定，只要你明白原理，这些都可以自定义。
+自相矛盾的人为故障写在上方2段<style></style>中，而
+
+```
+<div id="gld3d">和<div id="gld3dbbb">
+```
+
+就是2个提醒界面，提醒界面的数量由你自己决定，只要你明白原理，这些都可以自定义。
+	
 2段<style></style>分别为什么内容：
   
 第1段style都是带有@keyframes，也就是之前所说的提醒界面css动画，也就是延迟5秒中之后才展现界面。
@@ -520,20 +527,24 @@ var gld3drjno1settimeout = false;
 那如果真的遇到这种情况该怎么办？
   
 后面的教程中有说明，基本就是使用try catch抓取这种故意的崩溃，因为崩溃会抛出error，捕获error后就说明adblock开启了。当然这个在上传的代码中try catch已经被嵌套在了
-  
+
+```
 document.getElementById('gld3dbbb').style.display="none";
-  
+```
+
 的外层，你直接复制使用即可。
   
 并且这样执行不管adblock是否开启都是能正常运行的，十分完美。
 
 当然，除了这个自动隐藏提醒界面的js功能直接写在<script></script>中，其他js代码实现的检测功能更加建议写在window.onload中，你可以在网上查阅大量和window.onload有关的很容易就明白为什么写在这边更好。
   
+```
 <script>
     window.onload = function(){
     };
 </script>
-  
+```
+
 这个在上传的代码中你也可以看到，有些检测功能被执行了2次，一次在onload中，一次在没有onload，但是延迟时间更长的settimeout中，这是否多余？
   
 没有错，这依然是不多余的，你也猜到了，onload功能很容易就被adblock禁用了，如果你不想写检测window.onload功能是否能够正常运行的代码，最笨和最容易的办法就是把相同的检测代码在没有onload的js中再写一次（延迟时间建议增加4秒或者更多），毕竟这花费的时间不到10秒钟，容易理解，还非常稳定。
@@ -558,6 +569,7 @@ document.getElementById('gld3dbbb').style.display="none";
   
 下方是2个简单的例子：
 
+```
 <script>
 var gld3dcheckguishow = false;
 </script>
@@ -579,6 +591,7 @@ var gld3dcheckguishow = false;
 <script type="text/javascript" src="https://www.xxx.com/xxx/themes/xxx/xxx-js/show_ads.js?v=1422" onerror="gld3d_1jserror()"></script>
 
 <script type="text/javascript" src="https://fex.bdstatic.com/hunter/alog/dp.min.js?v=5953" onerror="gld3d_jserror()"></script>
+```
 
 ### 原理：
   
@@ -620,6 +633,7 @@ var gld3dcheckguishow = false;
   
 你只需要使用类似这种代码检测是否有1个或者多个指定的全局变量，或者全局变量的值是否正确就能判断adblock是否开启
 
+```
 setTimeout(function(){
 	if (typeof google_global_correlator == "undefined") {
 			gld3dcheckguishow = true;
@@ -627,6 +641,7 @@ setTimeout(function(){
 			document.getElementById('gld3d').style.height='103%';
 	}
 }, 8917);
+```
 
 ### 如何获得页面中所有的js全局变量列表：
   
@@ -655,7 +670,8 @@ setTimeout(function(){
 并且这些所谓的错误实际上即使不捕获，在web开发者工具-控制台页面也会显示出来，error错误通常用红色表示，在测试时，你可以使用console.log('show info：',e);这种代码在控制台页面追踪和查看error的实际捕获效果。
   
 ### 捕获error的方式1（这种方式不能捕获settimeout产生的error）：
-  
+
+```
 try {
       //在此处执行某些可能会引起error的行为
 } catch (e) {
@@ -665,9 +681,11 @@ try {
 			console.log('show info：',e);
 	}
 }
+```
 
 ### 捕获error的方式2（用来捕获settimeout产生的error）：
-  
+
+```
 const gld3dpromise = new Promise((resolve, reject) => {
 		setTimeout(function(){
 			try {		
@@ -679,22 +697,27 @@ const gld3dpromise = new Promise((resolve, reject) => {
 });
 gld3dpromise.catch(error => {
 			console.log('show info：',error);
-												  });
-												  
+			});
+```
+
 ### 捕获error的方式3：	
-  
+
+```
 window.addEventListener('error',function(event) {
 		console.log('show info：',event);
 },true);			
+```
 
 ### 捕获error的方式4：	
-  
+
+```
 window.onerror = function (msg, url, lineNo, columnNo, error) {
 
 	console.log('show info：',msg+url+lineNo+columnNo+error);
 	
     return false;
 };
+```
 
 还是那句话，这些方式最正确的用法，有哪些缺陷都应该查阅mdn。
 
@@ -704,7 +727,8 @@ window.onerror = function (msg, url, lineNo, columnNo, error) {
 记住：如果某些元素被adblock隐藏，那么这些元素的宽度和高度会变成0。
   
 记住：当adblock阻止广告js加载，很多时候会导致广告外层div不会像正常加载那样撑满整个区域，而是高度变的低甚至没有。
-
+	
+```
 setTimeout(function(){
 			var gld3d_home =  document.getElementsByClassName("qnx8de")[0];
 			var gld3d_4hide = false;
@@ -721,19 +745,23 @@ setTimeout(function(){
 					gld3d_4hide = true;
 				}
 			}
-			
+```
+									  
 ### 方法5：检测应该显示的提醒界面是否被隐藏来检测。
                                                   
 当你检测到adblock，并且展现了提醒界面，那么这个提醒界面可能还是会被抓住特征并被隐藏怎么办？
                                                   
 看到上方例子中，如果展现提醒界面时，除了设置样式，还会设置
-                                                  
+
+```								  
 gld3dcheckguishow = true;
-                                                  
+```
+									  
 也就是使用js变量的方式告诉自己：提醒界面已经显示出来了。
                                                   
 之后你可以在检测的最晚时间再检测一下这个变量的值，如果变量的值和界面的显示状态不同，那么直接把提醒文本直接插入到页面重要部分，并顺便把重要部分的内容抹去。
-                                                  
+
+```								  
 window.onload = function(){
 		setTimeout(function(){
 					if (gld3dcheckguishow)
@@ -751,7 +779,8 @@ window.onload = function(){
 					}
 		}, 4800);
 };
-                                                  
+```
+									  
 当然你也可以换成其他逻辑，比如把id=content的元素的高度重新设置为300px，让情况回到原点。
 
 ### 如何隐藏检测代码特征：
@@ -763,13 +792,15 @@ window.onload = function(){
 或许你会觉得每隔1周改变一次随即名字不够及时，但是上传的代码中，这些随机码很大一部分是通过【获取当前时间是今年的第几周+当前页面的id】生成的，所以你会发现每个网页虽然在运行相同的检测代码，但是每个网页中这些随机名字都是完全不同的。
                                                   
 需要注意的是：由于html中元素的id必须以26个英文字母作为开头（最正确的解释请看mdn）才会生效，所以你要避免首个字符会是数字的生成方法。
-                                                  
+
+```
 <style>@keyframes gld3dnone-to-block
 <style>#gld3d p, #gld3dbbb p{
 <div id="gld3d"><p>
 var gld3drjno1settimeout = false;
 function gld3d_1jserror(){
-
+```
+	
 当你完全掌握如何使用【banana detect adblock】，那你就成了一个专家，这个时候如何变的更加专业？
   
 比如：你可以预料到下次adblock的维护者会使用什么样的规则来解决现在你给他们制造的问题，也就是《笑傲江湖》中风清扬所说的：料敌击先。如果你没有这个本事，就不能像令狐冲那样，一剑刺瞎n个高手。
@@ -777,7 +808,8 @@ function gld3d_1jserror(){
 这种预测通常都是基于你对当前逻辑的分析，并且清楚的知道自己写的代码存在什么样的弱点和漏洞。这时还是那句话，不要因为不能写出完美的逻辑而失落，我们恰恰需要的就是不完美的逻辑，还记得我们的真正目的了吗？
   
 当你尝试预测几次，发现每次结果都和你的预测根本不同时，这该怎么办？毕竟解决问题的方式并不是一种，难道还要花费大量的脑力把所有可能都分析出来？
-  
+
+```
 banana：你真笨啊。
   
 你：那你来，我倒要看看你是怎么预测准确率高达100%的，你有这么聪明吗？
@@ -789,7 +821,8 @@ banana：我比你还笨，而且我还不想动脑子。
 作为一个笨人，你知道我是怎么预测的吗？
   
 就像考试一样，为了考100分，我没有选择认真上课，而是选择考试时在老师的眼皮子底下偷看试卷的标准答案，也就是所谓的作弊。。。哈哈哈哈哈哈
-  
+```
+	
 ### 如何作弊：
   
 当你已经被adblock的维护者盯上，并且成了一个不能根治的顽疾后，adblock的维护者或者其他人会在github上面给这一条提交issue，然后你也可以访问这个issue的链接看他们在讨论什么，如果他们找到了暂时的解决办法，通常他们会在页面的底部向过滤列表添加新的规则，偷看这个规则，也就是标准答案吧。
