@@ -640,9 +640,9 @@ var gld3dcheckguishow = false;
 ```
 setTimeout(function(){
 	if (typeof google_global_correlator == "undefined") {
-			gld3dcheckguishow = true;
-			document.getElementById('gld3d').style.width="101%";
-			document.getElementById('gld3d').style.height='103%';
+		gld3dcheckguishow = true;
+		document.getElementById('gld3d').style.width="101%";
+		document.getElementById('gld3d').style.height='103%';
 	}
 }, 8917);
 ```
@@ -682,7 +682,7 @@ try {
 	if (e.name == "ReferenceError")
 	{
 
-			console.log('show info：',e);
+		console.log('show info：',e);
 	}
 }
 ```
@@ -691,17 +691,17 @@ try {
 
 ```
 const gld3dpromise = new Promise((resolve, reject) => {
-		setTimeout(function(){
-			try {		
-						//在此处执行某些可能会引起error的行为
-			} catch (e) {
-			  reject(e)
-			}
-		},  4);
+	setTimeout(function(){
+		try {		
+			//在此处执行某些可能会引起error的行为
+		} catch (e) {
+		  reject(e)
+		}
+	},  4);
 });
 gld3dpromise.catch(error => {
-			console.log('show info：',error);
-			});
+	console.log('show info：',error);
+	});
 ```
 
 ### 捕获error的方式3：	
@@ -734,21 +734,22 @@ window.onerror = function (msg, url, lineNo, columnNo, error) {
 	
 ```
 setTimeout(function(){
-			var gld3d_home =  document.getElementsByClassName("qnx8de")[0];
-			var gld3d_4hide = false;
-			
-			if (typeof gld3d_home == 'object')
-			{
-				var gld3d_home_h = gld3d_home.offsetHeight
-				if (parseInt(gld3d_home_h) < parseInt(20))
-				{
-					gld3d_4hide = true;
-				}
-				if (window.getComputedStyle(gld3d_home).getPropertyValue('text-align') != "center")
-				{
-					gld3d_4hide = true;
-				}
-			}
+	var gld3d_home =  document.getElementsByClassName("qnx8de")[0];
+	var gld3d_4hide = false;
+
+	if (typeof gld3d_home == 'object')
+	{
+		var gld3d_home_h = gld3d_home.offsetHeight
+		if (parseInt(gld3d_home_h) < parseInt(20))
+		{
+			gld3d_4hide = true;
+		}
+		if (window.getComputedStyle(gld3d_home).getPropertyValue('text-align') != "center")
+		{
+			gld3d_4hide = true;
+		}
+	}
+}						  
 ```
 									  
 ### 方法5：检测应该显示的提醒界面是否被隐藏来检测。
