@@ -726,13 +726,13 @@ window.onerror = function (msg, url, lineNo, columnNo, error) {
 还是那句话，这些方式最正确的用法，有哪些缺陷都应该查阅mdn。
 
 
-### 方法4：检测广告外层<div></div>的高度是否正常，指定css属性是否正常来检测。
+### 方法4：检测广告外层<div>的高度是否正常，指定css属性是否正常来检测。
   
 记住：如果某些元素被adblock隐藏，那么这些元素的宽度和高度会变成0。
   
 记住：当adblock阻止广告js加载，很多时候会导致广告外层div不会像正常加载那样撑满整个区域，而是高度变的低甚至没有。
 	
-记住：外层<div></div>如果你之前设置了有些css属性，当google广告加载后，google广告可能会自动修改这些属性。也就是说如果检测到这些css属性没有被改变，那么adblock是开启状态
+记住：外层<div>如果你之前设置了有些css属性，当google广告加载后，google广告可能会自动修改这些属性。也就是说如果检测到这些css属性没有被改变，那么adblock是开启状态
 	
 ```
 setTimeout(function(){
