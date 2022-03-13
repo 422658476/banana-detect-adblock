@@ -415,9 +415,9 @@ style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
 ```
 ```
 <style>
-#gld3d p, #gld3dbbb p{font-size:1.6rem;line-height:1.6;text-align:center;margin:2rem 0;}
-#gld3d, #gld3dbbb{position: fixed;width: 100%;height:100%;background: rgba(255,255,255,.95);z-index:-950;display:block;}
-#gld3d{z-index:950;}
+	#gld3d p, #gld3dbbb p{font-size:1.6rem;line-height:1.6;text-align:center;margin:2rem 0;}
+	#gld3d, #gld3dbbb{position: fixed;width: 100%;height:100%;background: rgba(255,255,255,.95);z-index:-950;display:block;}
+	#gld3d{z-index:950;}
 </style>
 ```
 ```
@@ -500,15 +500,15 @@ var gld3drjno1settimeout = false;
 ```
 ```
 <script type="text/javascript" language="javascript">
-		setTimeout(function(){
-				if (typeof gld3drjno1settimeout == "undefined") {
-				}else{
-					gld3drjno1settimeout = true;
-				}
-				if (gld3drjno1settimeout) {
-						document.getElementById('gld3dbbb').style.display="none";
-				}
-		},  4);
+	setTimeout(function(){
+		if (typeof gld3drjno1settimeout == "undefined") {
+		}else{
+			gld3drjno1settimeout = true;
+		}
+		if (gld3drjno1settimeout) {
+			document.getElementById('gld3dbbb').style.display="none";
+		}
+	},  4);
 </script>
 ```
 	
