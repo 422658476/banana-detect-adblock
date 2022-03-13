@@ -673,7 +673,7 @@ setTimeout(function(){
   
 并且这些所谓的错误实际上即使不捕获，在web开发者工具-控制台页面也会显示出来，error错误通常用红色表示，在测试时，你可以使用console.log('show info：',e);这种代码在控制台页面追踪和查看error的实际捕获效果。
   
-### 捕获error的方式1（这种方式不能捕获settimeout产生的error）：
+#### 捕获error的方式1（这种方式不能捕获settimeout产生的error）：
 
 ```
 try {
@@ -687,7 +687,7 @@ try {
 }
 ```
 
-### 捕获error的方式2（用来捕获settimeout产生的error）：
+#### 捕获error的方式2（用来捕获settimeout产生的error）：
 
 ```
 const gld3dpromise = new Promise((resolve, reject) => {
@@ -704,7 +704,7 @@ gld3dpromise.catch(error => {
 	});
 ```
 
-### 捕获error的方式3：	
+#### 捕获error的方式3：	
 
 ```
 window.addEventListener('error',function(event) {
@@ -712,7 +712,7 @@ window.addEventListener('error',function(event) {
 },true);			
 ```
 
-### 捕获error的方式4：	
+#### 捕获error的方式4：	
 
 ```
 window.onerror = function (msg, url, lineNo, columnNo, error) {
