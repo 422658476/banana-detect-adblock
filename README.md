@@ -169,7 +169,7 @@ banana：你见的市面太少了，我就见过：
 
 当你了解adblock的功能缺陷和他能产生的效果后，你就可以开始学习【banana detect adblock】的原理了。
 
-从前面你已经了解到，你和adblock之间最大的问题是他的权限高于你，所以adblock可以：
+## 从前面你已经了解到，你和adblock之间最大的问题是他的权限高于你，所以adblock可以：
 
 1、禁止加载和生效:外联css、内联css、外联js、内联js。
 
