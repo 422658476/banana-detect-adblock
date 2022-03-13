@@ -453,7 +453,7 @@ document.getElementById('gld3d').style.width="0%";
   
 这个时候你就需要使用google搜索：animation mdn。然后通过mdn页面查看关键的animation-fill-mode属性的原理就能明白。
   
-简单的说，当【animation-fill-mode: both】时，动画中的from属性在动画没有启动前就会生效，也就第2段<style></style>中相同属性在生效前就被覆盖了，例子中就是默认高度从100%变为动画from中的0%覆盖，也就是提醒界面默认隐藏，5秒后在显示出来。
+简单的说，当【animation-fill-mode: both】时，动画中的from属性在动画没有启动前就会生效，也就第2段<style></style>中相同属性在生效前就被覆盖了，例子中就是默认高度为100%被动画from中的高度为0%覆盖，也就是提醒界面默认隐藏，5秒后在显示出来。
   
 这样就解决了界面一闪而过的问题。
   
