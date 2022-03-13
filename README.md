@@ -256,7 +256,8 @@ https://github.com/gorhill/uBlock/wiki
 页面获得，通常你只要看页面上【My filters pane 】【My rules pane】中的内容或者子内容就能找到。
 
 你并不需要现在就打开它们，在教程中需要这些知识的地方，如果教程说明你还是有疑问在去寻找这些东西的答案即可。
-接下来我们看一下我们和adblock各自有哪些筹码：
+
+## 接下来我们看一下我们和adblock各自有哪些筹码：
 
 通常的认知是我们和adblock都具有使用：html+css+js的权力，但是adblock在这三项上的权限都比你大，所以我们完全束手无策，只能任人鱼肉，如何扭转这种劣势就是【banana detect adblock】最大的作用。
 
@@ -268,6 +269,7 @@ https://github.com/gorhill/uBlock/wiki
 
 【banana detect adblock】的代码在网页中被分为三个部分，分别放在
 
+```
 <html>
 	<head>
 			...
@@ -283,6 +285,7 @@ https://github.com/gorhill/uBlock/wiki
 			第3部分放在这边
 	</body>
 </html>
+```
 
 第1部分主要用来让包裹广告代码的外层div的id产生随机化，随机化后这些div的css也需要添加在这边，因为名字和之前不同，之前的css不会产生作用了，这样也可以避免破坏原来已经写好的代码。
 
