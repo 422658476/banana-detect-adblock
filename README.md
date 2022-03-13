@@ -770,21 +770,21 @@ gld3dcheckguishow = true;
 
 ```								  
 window.onload = function(){
-		setTimeout(function(){
-					if (gld3dcheckguishow)
-					{
-						var element = document.getElementById('gld3d');
-						if (typeof(element) != 'undefined' && element != null)
-						{
-						   //+
-							  if (element.offsetWidth == "0" || element.offsetHeight == "0")
-							  {
-								   //not show
-								   document.getElementById('content').innerHTML = "<div class=\"bg space\"><p>禁用广告屏蔽(ad blocker)，刷新页面继续浏览<\/p><p>Please disable your ad blocker,refresh page to view.<\/p><p>请使用firefox或者基于chrome的浏览器浏览本站<\/p><p>Please use firefox or chrome-based browser to browse this site<\/p><\/div>";
-							  }
-						}
-					}
-		}, 4800);
+	setTimeout(function(){
+		if (gld3dcheckguishow)
+		{
+			var element = document.getElementById('gld3d');
+			if (typeof(element) != 'undefined' && element != null)
+			{
+			   //+
+				  if (element.offsetWidth == "0" || element.offsetHeight == "0")
+				  {
+					   //not show
+					   document.getElementById('content').innerHTML = "<div class=\"bg space\"><p>禁用广告屏蔽(ad blocker)，刷新页面继续浏览<\/p><p>Please disable your ad blocker,refresh page to view.<\/p><p>请使用firefox或者基于chrome的浏览器浏览本站<\/p><p>Please use firefox or chrome-based browser to browse this site<\/p><\/div>";
+				  }
+			}
+		}
+	}, 4800);
 };
 ```
 									  
