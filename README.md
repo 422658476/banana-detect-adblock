@@ -376,7 +376,7 @@ style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
 
 添加一行内联js代码，当这行代码能运行，那么它会发挥它的作用：修改提醒界面的css属性，从而隐藏这个界面。
 
-这样会有什么样的后果：
+**这样会有什么样的后果：**
 
 如果用户开启了adblock，并且内联js功能被禁用，那么提醒界面由于无法使用js自动关闭，从而就会自动一直显示。
 
@@ -384,7 +384,7 @@ style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
 
 这样就能逼迫adblock交出内联js的使用权，是不是非常简单。
 
-当然这样也必然会遇到问题：
+**当然这样也必然会遇到问题：**
 
 由于网页运行的基本原理，js只会在html代码加载完毕，以及所有css属性应用完毕之后才开始运行。
 
