@@ -370,7 +370,7 @@ style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
 
 当你可以使用内联css之后，就可以开始通过使用内联css制造自相矛盾的人为故障，并利用这个故障来夺回内联js的使用权，从现在开始，仅仅使用html和css，就可以完美的检测是否开启了adblock并提醒用户关闭，还能让adblock的维护者开始疲于奔命，是不是很惊讶。
 
-那么如何使用html和css检测是否开启了adblock并提醒用户关闭（基本原理）：
+**那么如何使用html和css检测是否开启了adblock并提醒用户关闭（基本原理）：**
 
 网页加载后默认就跳出提醒用户关闭ablock的界面，不管用户是否开启了adblock。
 
