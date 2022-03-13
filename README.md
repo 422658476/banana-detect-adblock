@@ -611,9 +611,11 @@ var gld3dcheckguishow = false;
   
 还记得前面所说的我们使用检测代码的目的吗：消耗维护者的时间和精力，这是最好的手段之一，请一直使用，因为它通常都是有效的。
   
-那如何获取这些被adblock阻止的js文件的链接？
+**那如何获取这些被adblock阻止的js文件的链接？**
   
 太简单了，启用ublock浏览经常使用的大型网站，在ublock的【记录器】界面中能跳出很多很多。
+
+如果你比较懒怎么办？没有办法，banana已经找了几十个了，在这个[【link.txt】](https://github.com/422658476/banana-detect-adblock/blob/main/link.txt)文件中，直接复制用就行。
   
 但是你会担心，如果adblock的维护者在你每添加一条不同的js文件链接后，不删除之前旧的，只新增新的，那么你能使用的js文件链接岂不是越来越少？
   
