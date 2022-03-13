@@ -467,7 +467,7 @@ document.getElementById('gld3d').style.width="0%";
   
 如果adblcok不禁用css动画和其他内联css，但是禁用了js，那么提醒界面就会在约5秒后显示出来。
   
-这样的逻辑是不是非常完美？这个时候你就逼迫adblock交出内联js或者内敛外联js的使用权了。
+这样的逻辑是不是非常完美？这个时候你就逼迫adblock交出内联js或者内联js+外联js的使用权了。
   
 如果此时相关的html代码或者css代码被adblock抓住了特征，隐藏了相关元素怎么办？
   
