@@ -303,8 +303,10 @@ https://github.com/gorhill/uBlock/wiki
 
 当浏览器只能运行html时，整个网页像txt文本一样，如果想要显示关闭adblock的文字和图片，那么只能放在第2部分的最顶部，这就是上传文件中的这部分代码（一张带文字的红色图片，一段文本）：
 
+```
 <img style="display:none" src="<?php echo get_template_directory_uri() ?>/moban-img/index.png" width="800" height="600">
 <div style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;" ><p>禁用广告屏蔽(ad blocker)，刷新页面继续浏览</p><p>Please disable your ad blocker,refresh page to view.</p><p>请使用firefox或者基于chrome的浏览器浏览本站</p><p>Please use firefox or chrome-based browser to browse this site</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p></div>
+```
 
 要点：
 
