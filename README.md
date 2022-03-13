@@ -461,7 +461,7 @@ document.getElementById('gld3d').style.width="0%";
   
 当2段<style></style>都存在时：
   
-如果adblock禁用了所有内联css，就会倒退回【2.如何在有外联css使用权限时夺回内联css的使用权（前面所说的第2种情况）：】并产生你指定的页面显示问题。
+如果adblock禁用了所有内联css，就会倒退回【2.如何在有外联css使用权限时夺回内联css的使用权（前面所说的第2种情况下）：】并产生你指定的页面显示问题。
   
 如果adblock通过禁用@keyframes，从而禁用css动画，那么提醒界面就会因为第2段<style></style>中的属性没有被正常覆盖立刻显示出来。
   
