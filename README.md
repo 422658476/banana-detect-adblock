@@ -616,6 +616,8 @@ var gld3dcheckguishow = false;
 太简单了，启用ublock浏览经常使用的大型网站，在ublock的【记录器】界面中能跳出很多很多。
 
 如果你比较懒怎么办？没有办法，banana已经找了几十个了，在这个[【link.txt】](https://github.com/422658476/banana-detect-adblock/blob/main/link.txt)文件中，直接复制用就行。
+
+但是请注意：如果你的网站是【https://】,那么引用的js文件也要是【https://】开头的，因为【https://】协议中为了安全默认禁止加载【http://】链接，详细请查看mdn
   
 但是你会担心，如果adblock的维护者在你每添加一条不同的js文件链接后，不删除之前旧的，只新增新的，那么你能使用的js文件链接岂不是越来越少？
   
