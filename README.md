@@ -10,7 +10,9 @@
 
 **如果你正在烦恼：** adblock屏蔽掉了网站上的google广告或者其他广告，而又没有还手之力，需要一段检测adblock的代码来扭转这个局面，那么【banana detect adblock】可能是你的不二选择。
 
+---
 ### ![](./detect-adblock-ui.png)
+---
 
 **选择adblock检测代码的误区：**
 
