@@ -1,0 +1,299 @@
+
+谷歌
+//adservice.google.com/adsid/integrator.js   加载慢可能会判断为失败
+//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+//www.googletagservices.com/tag/js/gpt.js
+
+
+百度
+
+https://pss.bdstatic.com/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js
+//cpro.baidu.com/cpro/ui/rt.js       abp
+//fex.bdstatic.com/hunter/alog/dp.min.js    这条被 /alog/dp.  这个激活，可以尝试使用ip地址
+//cpro.baidustatic.com/js/prot.js   小
+
+阿里巴巴
+//log.mmstat.com/eg.js
+
+
+网易
+https://img3.126.net/ntesrich/2013/1210/adControl-indexx-v1.0.2-131210.js
+https://img3.126.net/ntesrich/auto/adbox/adbox-v1.1.2-120705.js
+//mimg.127.net/external/js6promote9.min.js       abp
+//analytics.163.com/ntes.js
+//nos.netease.com/fps-pro/frontends/house_index/index/js/index-ad.js
+//static.mediav.com/js/mvf_g3.js
+
+qq
+​https://ncgi.video.qq.com/fcgi-bin/get_guid_http_to_jce
+
+taobao
+​https://g.alicdn.com/AWSC/et/1.62.1/et_n.js
+
+爱奇艺
+​https://datax.baidu.com/x.js
+
+bilibili
+​https://s1.hdslb.com/bfs/seed/blive/blfe-link-shortassets/dist/component.statistics/log-reporter.js
+
+斗鱼
+​https://3gimg.qq.com/mig_op/beacon/js/beacon_release_s.js
+
+虎牙
+​https://a.msstatic.com/huya/main3/widget/roomGgTop/chunk_1c4b1.js
+
+中关村在线
+​https://stat.zol.com.cn/adrs/ol.js
+​https://stat.zol.com.cn/adrs/cg_gmine.js
+​https://p.zol-img.com.cn/mobile/index.js
+
+hao123
+js可能有防盗链
+
+凤凰
+https://c0.ifengimg.com/iis/iis_v1_3.js
+https://p0.ifengimg.com/a/2019/0102/cpc_pic_cpm_guanggao_cpa_gg_adview_ads_300x250.js
+
+喜马拉雅
+https://jspassport.ssl.qhimg.com/11.0.1.js
+https://www.qchannel03.cn/m2.js
+
+58同城
+https://adshow.58.com/js/ssp_init.js
+
+虎扑
+https://p.data.cctv.com/ge.js
+
+豆瓣
+https://img3.doubanio.com/dae/fundin/piwik.js
+
+芒果tv
+​https://sb.scorecardresearch.com/beacon.js
+
+it之家
+https://www.ithome.com/static/api/js/trans/logger.js
+
+太平洋电脑
+https://www.pconline.com.cn/jrzcz/jk/pc/1512/intf12245.js
+
+简书
+​https://udiab1.jianshu.com/site/hcbz/b/common/rul-b.js
+
+新浪
+https://i1.sinaimg.cn/unipro/pub/suda_m_v630.js
+//www.sinaimg.cn/unipro/pub/suda_m_v634.js         abp
+//d5.sina.com.cn/litong/zhitou/leju/leju.js         abp
+//js.t.sinajs.cn/t6/home/js/pl/guide/bigday/index.js      abp 来自微博
+//dailynews.sina.com/gb/ads/common/floatingvideo.js
+//res2.esf.leju.com/bicluster/dist/js/analyse.js
+
+搜狐
+https://adv-sv-show.focus.cn/be_fox_say3
+//images.sohu.com/bill/default/sohu-require.js         abp
+//js.sohu.com/pv.js
+//simg.f.itc.cn/public_photo/advert/adsfehomev1.min.js         abp sohu
+
+Sogou
+http:////gouwu.sogou.com/amdjs/release/common/act_all_ad.gbk.js         abp
+//galaxy.sogoucdn.com/galaxy/sogouAD.js
+
+
+环球
+//rev.uar.hubpd.com/agent/pa.js
+//ipengtai.huanqiu.com/resource/js/base.js         abp
+
+中华
+//sssvd.china.com/js/4n3j9p.js
+//dvs.china.com/js/chinaadclientV2.0.js         abp
+//hdc.watchtimes.com.cn/common/openjs/js/tcw7.js?idva=fjvsl         abp 问号一定要
+
+techweb
+//bdcpro2018.techweb.com.cn/faswwgbwx.js         abp 不能使用 仅http
+
+
+17173
+//js.17173.com/ping.js
+//ue.17173cdn.com/a/www/index/2016v2/js/adm2.js         abp
+
+4399
+//www.4399.com/js/4399stat.js
+
+7k7k
+//bdjs.uimg.cn/site/js/78147.js?p=kclshjgc    一定要带？号后的
+
+新华网
+//www.xinhuanet.com/global/js/jquery.xinhuanetAD.min.js         abp 不能使用 仅http
+
+中国新闻网
+//www.chinanews.com/ad/jsad.js         abp
+
+南方周末
+//www.infzm.com/web/js/ad.js         abp
+
+中青在线
+//adsame.cyol.com/s         abp
+
+新京报
+//ad.bjnews.com.cn/js/adservice.js         abp 不能使用 仅http
+
+cctv
+//p.data.cctv.com/eg.js
+//galaxy.bjcathay.com/s
+//sum.cntvwb.cn/ecap.min.js
+//webd.home.news.cn/webdig.js
+//static.gridsumdissector.com/js/Clients/GWD-002757-56B3A5/gs.js    大
+
+扑虎
+//orz.hupu.com/hupu/stream.js         abp
+//b3.hoopchina.com.cn/web/ad/skin/js/replaceSkin.v1.js         abp
+//static.fraudmetrix.cn/fm.js    大
+
+直播吧
+//www.zhibo8.cc/js/ad_display.js
+//www.zhibo8.cc/js/adv-slide-toggle.js         abp
+
+苏宁易购
+//dfp.suning.com/dfprs-collect/dist/dfp.js   大         abp
+
+当当
+//click.dangdang.com/js_tracker.js
+
+京东
+//wl.jd.com/joya.js   来自一号店
+
+途牛
+//js.ptengine.cn/pta.js
+
+起点
+//pingjs.qq.com/h5/stats.js
+
+飞卢小说
+//s.faloo.com/ad/duilian2016.js         abp  下方会有图片
+
+靖江文学城
+//s8-static.jjwxc.net/scripts/advertisement.js         abp
+
+
+it68
+//168.it168.com/a/h161.js         abp
+
+pcpop
+//ashow.pcpop.com/a/h455.js         abp
+
+pconline 
+//www.pconline.com.cn/_hux_/index.js         abp
+//www.pconline.com.cn/_hux_/online/mobile/index.js
+//js.3conline.com/ue/share/baby/static/api/js/trans/logger.js
+
+it之家
+//img.ithome.com/file/js/money/pc/index1.js         abp
+
+游民星空
+//j.gamersky.com/common/tg/fxtg.js         abp
+
+易车网
+//img.easypass.cn/das/cheyingtong/adsense/prod/advert.js         abp
+//images.pagechoice.net/data/athena/js/pc.js         abp
+//js.bitauto.com/dealer/union/script/ads.js         abp
+
+百姓网
+//script-bd.baixing.net/hcuyrrbbb.js         abp
+//tu.baixing.com/widget/script/zl-webvr1js.js         abp
+
+天空软件
+//www.skycn.com/static/skycn/js/ad.js         abp
+
+华军软件园
+//www.onlinedown.net/js/ad/index.js         abp
+
+下载吧
+//www.xiazaiba.com/data/ads/jst.js         abp
+
+驱动人生
+//www.160.com/uploadfiles/ad/index.js         abp
+
+天涯
+//static.tianyaui.com/qy/adsame/ads.js         abp
+
+猫扑
+//www.mop.com/newIndex/js/common/gg.js         abp
+
+西祠胡同
+//z.xici.net/r/80/mjjm         abp
+
+西路军事
+//tongj.xilu.com/common/resource/no6g5.js         abp
+
+华声在线
+//www.voc.com.cn/adsClick/576.js         abp
+
+
+东方财富
+//emcharts.dfcfw.com/EMFloatFrame/prod/emfloatframe.min.js         abp
+
+和讯
+//img.hexun.com/zt/articleAd/js/popAd.js         abp
+
+39健康
+//image.39.net/creative/r.js         abp
+
+2345导航
+http://www.2345.com/right/site/like/gul_default_b_v3.js         abp
+
+妈妈网
+//yuansu.bjmama.net/a/spc_74.js         abp
+
+果壳
+//sslstatic.guokr.com/baidu-cbjs/js/o.js         abp
+
+澎湃新闻
+//adpai.thepaper.cn/s           abp
+
+
+http://cpro.baidustatic.com/cpro/ui/c.js   大
+
+//x.autoimg.cn/space/AutoRequestHeader/fingerprint.js
+//analytics.meituan.net/analytics.js
+http://ws.mmstat.com/eg.js
+
+http://pagead2.googlesyndication.com/pagead/show_ads.js
+www.rjno1.com/templates/moban/js/ads/show_ads.js
+
+http://d9.sina.com.cn/litong/zhitou/sinaads/src/spec/sinaads_ck.js
+http://d7.sina.com.cn/litong/zhitou/sinaads/src/spec/sinaads_ck.js
+http://d3.sina.com.cn/litong/zhitou/sinaads/release/sinaads.js
+http://d9.sina.com.cn/litong/zhitou/sinaads/release/sinaads.js
+http://d7.sina.com.cn/litong/zhitou/sinaads/release/sinaads.js
+
+https://www.xiazaiba.com/static/js/stat.js
+
+http://ue.17173cdn.com/a/lib/vda/seed.js
+http://js.17173.com/ping.js
+https://dfp.suning.com/dfprs-collect/dist/dfp.js
+http://b.scorecardresearch.com/beacon.js
+https://www.zhibo8.cc/js/adv-slide-toggle.js
+https://img3.doubanio.com/dae/fundin/piwik.js
+http://tjs.sjs.sinajs.cn/open/analytics/js/suda.js
+
+http://count.pcpop.com/GoogleAnalytics.js
+http://ashow.pcpop.com/a/h455.js
+
+https://x.autoimg.cn/space/AutoRequestHeader/fingerprint.js
+https://x.autoimg.cn/engine/root/fggxl.js
+
+http://stat.zol.com.cn/adrs/ol.js
+
+https://www.pconline.com.cn/_hux_/index.js
+
+http://www.skycn.com/static/skycn/js/ad.js
+
+https://js-2.pchome.net/ad/article/article_index.js
+
+https://js.users.51.la/19783959.js
+
+http://www.onlinedown.net/Public/js/newjs/ad/index.js
+
+http://media.cheshi-img.com/js/page/1457.js
+http://js.cheshi-img.com/home/ad_index.js
+
+http://dn-growing.qbox.me/vds.js
