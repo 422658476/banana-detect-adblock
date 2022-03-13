@@ -1,4 +1,4 @@
-# banana detect adblock 
+#  [banana detect adblock】](https://github.com/422658476/banana-detect-adblock)
 
 ### ![](./img/mpv-logo-128.png)  🌐 Language of this page  : `中文` | [`English`](https://github-com.translate.goog/422658476/banana-detect-adblock?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
