@@ -561,7 +561,7 @@ document.getElementById('gld3dbbb').style.display="none";
   
 接下来你可以使用js和多种方式检测adblock是否开启，banana会告诉你5种完全不同的检测adblcok的方法。
   
-## 使用js检测adblcok的方法：
+## 使用js检测adblock的方法：
   
 ### 方法1：使用外联js检测，通过检测js文件是否能被正常加载来判断。
   
