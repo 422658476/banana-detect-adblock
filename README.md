@@ -312,8 +312,11 @@ https://github.com/gorhill/uBlock/wiki
 
 由于这些html代码只有在css不能使用的时候才显示，所以通常能够使用css的时候只需要使用css把img div元素设置为隐藏即可，也就是上方代码中的
 
+```
 style="display:none"
+
 style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
+```
 
 当禁用css，那么这些style也就被禁用的，内容自然就显示出来了。
 
@@ -323,7 +326,9 @@ style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
 
 聪明的adblock维护者就会开启网页使用外联css的权限，也就是页面能够加载和使用存储在.css文件中的css，也就是你可以使用以下方式加载的css
 
+```
 <link rel='stylesheet' href='https://www.xxx.com/xxx/themes/xxxx/style.css' type='text/css'/>
+```
 
 由于网页模板通常都是使用这种方式加载css，所以当你获得外联css的使用权限后，网页的样式就会变得基本正常。
 
@@ -333,7 +338,9 @@ style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
 
 其中一行是内联css代码，只需要类似上传代码中的：
 
+```
 <style>#content{height: auto;}</style>
+```
 
 这行代码被写在第3部分顶部，其实位置并不重要，重要的是这行css代码是被直接写在html中的。
 
@@ -341,7 +348,9 @@ style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
 
 你也会猜到另一行代码写在外联css文件中，通常是在css文件的尾部添加比如
 
+```
 #content{height: 300px;}
+```
 
 这样写可以覆盖原来的设置。这样只需要对默认css进行一点修改，并且不会造成任何破坏。
 
@@ -395,6 +404,7 @@ style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
 
 提醒界面的自动显示代码：
 
+```
 <style>
 	@keyframes gld3dnone-to-block {from {height:0%;overflow:hidden;}to {height:100%;overflow:hidden;}}
 	#gld3dbbb{animation-name: gld3dnone-to-block;animation-fill-mode: both;animation-delay:5726ms;}
@@ -402,18 +412,24 @@ style="width: 0px;height: 0px;overflow: hidden;visibility: hidden;"
 	@keyframes gld3dn-to-b {from {height:0%;overflow:hidden;}to {height:99%;overflow:hidden;}}
 	#gld3d{animation-name: gld3dn-to-b;animation-fill-mode: both;animation-delay:5977ms;}
 </style>
+```
+```
 <style>
 #gld3d p, #gld3dbbb p{font-size:1.6rem;line-height:1.6;text-align:center;margin:2rem 0;}
 #gld3d, #gld3dbbb{position: fixed;width: 100%;height:100%;background: rgba(255,255,255,.95);z-index:-950;display:block;}
 #gld3d{z-index:950;}
 </style>
+```
+```
 <div id="gld3d"><p>禁用广告屏蔽(ad blocker),刷新页面继续浏览</p><p>Please disable your ad blocker,refresh page to view.</p><p>请使用firefox或者基于chrome的浏览器浏览本站</p><p>Please use firefox or chrome-based browser to browse this site</p></div>
 <div id="gld3dbbb"><p>禁用广告屏蔽(ad blocker),刷新页面继续浏览</p><p>Please disable your ad blocker,refresh page to view.</p><p>请使用firefox或者基于chrome的浏览器浏览本站</p><p>Please use firefox or chrome-based browser to browse this site</p></div>
-
+```
 js关闭提醒界面的代码：
 
+```
 document.getElementById('gld3dbbb').style.display="none";
 document.getElementById('gld3d').style.width="0%";
+```
 
 自相矛盾的人为故障写在上方2段<style></style>中，而<div id="gld3d">和<div id="gld3dbbb">就是2个提醒界面，提醒界面的数量由你自己决定，只要你明白原理，这些都可以自定义。
 2段<style></style>分别为什么内容：
@@ -459,20 +475,23 @@ html的问题我们使用php来解决，代码中也给出了较为完美的方�
 当可以使用内联js，那么环境就变得宽松的多，是否有外联js的使用权无关紧要，因为使用js检测是否有使用外联js的能力也是检测adblock的方法。
   
 通常情况下，你会直接像下方这么写，来使用js来关闭自动显示的提醒界面，但这是不对的。
-  
+
+```
 <script type="text/javascript" language="javascript">
 	document.getElementById('gld3dbbb').style.display="none";
 	document.getElementById('gld3d').style.width="0%";
 </script>
-  
+``` 
 因为当你获得内联js的使用权后，adblock是带着一种乞求的态度让你运行这2行代码来隐藏提醒界面的，因为你不执行这2行代码提醒界面就会跳出来，这时我们可以利用这个弱点向adblock索取更多的资源，比如if、settimeout、或者其他js功能的使用权。
   
 如何操作，下面是一个简单的典型例子，理解后你可以层层加码。
-
+	
+```
 <script>
 var gld3drjno1settimeout = false;
 </script>
-
+```
+```
 <script type="text/javascript" language="javascript">
 		setTimeout(function(){
 				if (typeof gld3drjno1settimeout == "undefined") {
@@ -484,7 +503,8 @@ var gld3drjno1settimeout = false;
 				}
 		},  4);
 </script>
-
+```
+	
 例子中只使用了一行隐藏代码，也就是如果还有其他额外资源需要索取，当不能加在这个地方时，可以尝试加在另一行隐藏代码运行的外层。
   
 这个例子的意思非常简单，如果你看懂了，甚至是有些多此一举的，但实时真的多此一举吗？
