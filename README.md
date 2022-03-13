@@ -469,7 +469,7 @@ document.getElementById('gld3d').style.width="0%";
   
 这样的逻辑是不是非常完美？这个时候你就逼迫adblock交出内联js或者内联js+外联js的使用权了。
   
-如果此时相关的html代码或者css代码被adblock抓住了特征，隐藏了相关元素怎么办？
+**如果此时相关的html代码或者css代码被adblock抓住了特征，隐藏了相关元素怎么办？**
   
 html的问题我们使用php来解决，代码中也给出了较为完美的方案，也就是使用php产生随机代码、更多的随机数量div、带有点随机的文字来避开。
   
