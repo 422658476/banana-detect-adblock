@@ -792,7 +792,7 @@ window.onload = function(){
 
 ### 如何隐藏检测代码特征：
                                                   
-所有例子中，你会发现不管是变量名，还是html的元素id，甚至function的都使用以gld3d开头的名字，没有错，所有会暴露特征的地方【banana detect adblock】都使用php生成了每隔1周就会自动改变的随机文本，从而可以自动躲避adblock的特征捕获。
+所有例子中，你会发现不管是变量名，还是html的元素id，甚至function的都使用以【gld3d】开头的名字，没有错，所有会暴露特征的地方【banana detect adblock】都使用php生成了每隔1周就会自动改变的随机文本，从而可以自动躲避adblock的特征捕获。
 
 ```
 <style>@keyframes gld3dnone-to-block
