@@ -559,7 +559,7 @@ document.getElementById('gld3dbbb').style.display="none";
   
 如果你想要写一个类似的更加强健的检测代码，那么这段逻辑直接照抄即可，因为当你明白我上方所有描述的逻辑和流程，你就知道这几乎是完美的、唯一的、合理的获取各种权限的途径，就算有破绽，也很容易克服和修正。就像是水永远往下流，时间无法停止，地球是圆的，海水是咸的这些真理一样，这些是不能被扩展改变的。
   
-接下来你可以使用js和多种方式检测adblock是否开启，banana会告诉你5种完全不同的检测adblcok的方法。
+接下来你可以使用js和多种方式检测adblock是否开启，banana会告诉你6种完全不同的检测adblcok的方法。
   
 ## 使用js检测adblock的方法：
   
@@ -792,7 +792,7 @@ setTimeout(function(){
 }						  
 ```
 									  
-### 方法5：检测应该显示的提醒界面是否被隐藏来检测。
+### 方法5：检测应该显示的提醒界面是否被隐藏，从而判断是否adblock已经开启。
                                                   
 当你检测到adblock，并且展现了提醒界面，那么这个提醒界面可能还是会被抓住特征并被隐藏怎么办？
                                                   
@@ -827,6 +827,32 @@ window.onload = function(){
 ```
 									  
 当然你也可以换成其他逻辑，比如把id=content的元素的高度重新设置为300px，让情况回到原点。
+
+### 方法6：检测页面内是否有一个id叫做aswift_1的元素（frame）以及它的高度，这个只适合google广告。
+
+当页面加载了1个或者多个google广告，那么每个广告位中的广告都是放在各自的frame元素中的，frame元素由google广告创建，如果一个页面上有4个Google广告，那么这4个frame的id名字分别为：aswift_1，aswift_2，aswift_3，aswift_4
+
+所以当google广告被全部拦截或者部分拦截，导致广告不能显示，那么frame元素可能不能被正常创建，或者frame的高度不正常。
+
+我们只需要使用这类逻辑处理：
+
+```
+var gld3de1 =  document.getElementById('aswift_1');
+if (gld3de1 == null)
+{
+	//not have
+} else {
+	var gld3de1w = gld3de1.offsetWidth
+	if (parseInt(gld3de1w) < parseInt(20))
+	{
+		//not show
+	}
+}
+```
+
+通常我们只需要检测其中一个，也就是第一个即可。
+
+上传的代码中则有完整和更加健壮的逻辑。
 
 ### 如何隐藏检测代码特征：
                                                   
