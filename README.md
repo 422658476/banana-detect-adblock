@@ -273,7 +273,7 @@ https://github.com/gorhill/uBlock/wiki
 
 通常情况下，如果你知道如何在服务器端修改正在使用的网页模板、js、css，那么自然而然知道php是如何使用的，如果不知道请使用搜索引擎。
 
-【banana detect adblock】的代码需要在哪些地方加载，为什么要从这些地方加载：
+**【banana detect adblock】的代码需要在哪些地方加载，为什么要从这些地方加载：**
 
 【banana detect adblock】的代码在网页中被分为三个部分，分别放在
 
