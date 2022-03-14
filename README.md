@@ -830,7 +830,7 @@ window.onload = function(){
 
 ### 方法6：检测页面内是否有一个id叫做aswift_1的元素（frame）以及它的高度，这个只适合google广告。
 
-当页面加载了1个或者多个google广告，那么每个广告位中的广告都是放在各自的frame元素中的，frame元素由google广告创建，如果一个页面上有4个Google广告，那么这4个frame的id名字分别为：aswift_1，aswift_2，aswift_3，aswift_4
+当页面加载了1个或者多个google广告，那么每个广告位中的广告都是放在各自的frame元素中的，frame元素由google广告创建，如果一个页面上有4个Google广告，那么这4个frame的id名字分别为：aswift_1，aswift_2，aswift_3，aswift_4，当然这些名字你自己在web开发者工具中就能看到并找到这些名字的规律。
 
 所以当google广告被全部拦截或者部分拦截，导致广告不能显示，那么frame元素可能不能被正常创建，或者frame的高度不正常。
 
