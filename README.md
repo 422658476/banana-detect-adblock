@@ -10,6 +10,14 @@
 
 **如果你正在烦恼：** adblock屏蔽掉了网站上的google广告或者其他广告，而又没有还手之力，需要一段检测adblock的代码来扭转这个局面，那么【banana detect adblock】可能是你的不二选择。
 
+## What is banana detect adblock?
+
+[banana detect adblock] is a piece of "almost" universal adblock detection code written by [banana(422658476)](https://github.com/422658476) (that is, me) and placed in the html of the page file. It may be the only one so far that can continuously and effectively detect and prompt the user Turn off the detection code of a running adblock extension, which itself can keep evading the fate of being filtered out by adblock.
+
+In fact, this code has been deployed on [【软件No1 www.rjno1.com】](https://www.rjno1.com/) for several years. During these years, [banana detect adblock] has been continuously "tested" by the adblock filter code maintainer "every day". , continuous improvement, thus becoming closer and closer to perfection, closer to invulnerability, and the validity of this code is also proved by such a long time of normal work.
+
+**If you are troubled:** adblock blocks google ads or other ads on the website, but there is no way to fight back, you need a piece of code to detect adblock to reverse this situation, then [banana detect adblock] may be your best choice. 
+
 ---
 ### ![](./detect-adblock-ui.png)
 ---
