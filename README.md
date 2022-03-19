@@ -546,7 +546,7 @@ document.getElementById('gld3dbbb').style.display="none";
 
 的外层，你直接复制使用即可。
 
-这样一来try catch的使用权也获得了（有些人看到这些真的是好气啊😂）。
+这样一来try catch的使用权也获得了（有些人看到这些真的是好气啊😂，这也就是前面说的层层加码，想要什么问adblock要，它必须给你）。
   
 并且这样执行不管adblock是否开启都是能正常运行的，十分完美。
 
