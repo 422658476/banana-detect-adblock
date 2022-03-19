@@ -545,6 +545,8 @@ document.getElementById('gld3dbbb').style.display="none";
 ```
 
 的外层，你直接复制使用即可。
+
+这样一来try catch的使用权也获得了（有些人看到这些真的是好气啊😂）。
   
 并且这样执行不管adblock是否开启都是能正常运行的，十分完美。
 
