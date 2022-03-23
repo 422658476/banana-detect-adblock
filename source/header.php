@@ -93,6 +93,6 @@
 
 
 <!-- #after footer开始 -->
-	<?php get_template_part( 'moban-diy/mokuai','after-body');?>
+	<?php get_template_part( 'moban-diy/mokuai','after-footer');?>
 <!-- #after footer结束 -->
 </body>
