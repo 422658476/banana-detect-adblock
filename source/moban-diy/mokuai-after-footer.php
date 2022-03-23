@@ -115,7 +115,7 @@ const <?php echo $str_adblock; ?>promise = new Promise((resolve, reject) => {
 			}else{
 				<?php echo $str_adblock; ?>canhade = true;
 			}
-			if (<?php echo $str_adblock; ?>canhade) {
+			if (<?php echo $str_adblock; ?>canhade && <?php echo $str_adblock; ?>checkguishow == false) {
 				document.getElementById('<?php echo $str_adblock; ?>').style.width="0%";
 			}
 		}, <?php echo rand(50, 150); ?>);
