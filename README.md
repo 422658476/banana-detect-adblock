@@ -538,7 +538,7 @@ var gld3drjno1settimeout = false;
   
 那如果真的遇到这种情况该怎么办？
   
-后面的教程中有说明，基本就是使用try catch抓取这种故意的崩溃，因为崩溃会抛出error，捕获error后就说明adblock开启了。当然这个在上传的代码中try catch已经被嵌套在了
+后面的教程中有说明，基本就是使用try catch、promise.catch抓取这种故意的崩溃，因为崩溃会抛出error，捕获error后就说明adblock开启了。当然这个在上传的代码中try catch、promise.catch已经被嵌套在了
 
 ```
 document.getElementById('gld3dbbb').style.display="none";
@@ -546,7 +546,7 @@ document.getElementById('gld3dbbb').style.display="none";
 
 的外层，你直接复制使用即可。
 
-这样一来try catch的使用权也获得了（有些人看到这些真的是好气啊😂，这也就是前面说的层层加码，想要什么问adblock要，它必须给你）。
+这样一来try catch、promise.catch的使用权也获得了（有些人看到这些真的是好气啊😂，这也就是前面说的层层加码，想要什么问adblock要，它必须给你）。
   
 并且这样执行不管adblock是否开启都是能正常运行的，十分完美。
 
