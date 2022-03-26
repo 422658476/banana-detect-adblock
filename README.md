@@ -768,7 +768,7 @@ gld3dpromise.catch(error => {
 
 #### 捕获error的方式3：
 
-如果有js文件被禁止加载，或者让指定js故意重定向到noop.js（或者其他无用的文件）企图欺骗js文件加载成功，都能使用这种方式捕获。
+如果有js文件被禁止加载，或者让指定js故意重定向到noop.js（或者其他无用的文件）企图欺骗js文件加载成功，都能使用这种方式捕获，因为这些行为都会抛出error。
 
 ```
 window.addEventListener('error',function(event) {
@@ -778,7 +778,7 @@ window.addEventListener('error',function(event) {
 
 #### 捕获error的方式4：
 
-如果有js文件被禁止加载，或者让指定js故意重定向到noop.js（或者其他无用的文件）企图欺骗js文件加载成功，都能使用这种方式捕获。
+如果有js文件被禁止加载，或者让指定js故意重定向到noop.js（或者其他无用的文件）企图欺骗js文件加载成功，都能使用这种方式捕获，因为这些行为都会抛出error。
 
 ```
 window.onerror = function (msg, url, lineNo, columnNo, error) {
