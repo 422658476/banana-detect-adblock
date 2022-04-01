@@ -130,7 +130,7 @@ const <?php echo $str_adblock; ?>promise = new Promise((resolve, reject) => {
 			
 			if (typeof <?php echo $str_adblock; ?>_home == 'object')
 			{
-				var <?php echo $str_adblock; ?>_home_h = <?php echo $str_adblock; ?>_home.offsetHeight
+				var <?php echo $str_adblock; ?>_home_h = <?php echo $str_adblock; ?>_home.offsetHeight;
 				if (parseInt(<?php echo $str_adblock; ?>_home_h) < parseInt(20))
 				{
 					<?php echo $str_adblock; ?>_4hide = true;
@@ -142,7 +142,7 @@ const <?php echo $str_adblock; ?>promise = new Promise((resolve, reject) => {
 			}
 			if (typeof <?php echo $str_adblock; ?>_main == 'object')
 			{
-				var <?php echo $str_adblock; ?>_main_h = <?php echo $str_adblock; ?>_main.offsetHeight
+				var <?php echo $str_adblock; ?>_main_h = <?php echo $str_adblock; ?>_main.offsetHeight;
 				if (parseInt(<?php echo $str_adblock; ?>_main_h) < parseInt(20))
 				{
 					<?php echo $str_adblock; ?>_4hide = true;
@@ -154,7 +154,7 @@ const <?php echo $str_adblock; ?>promise = new Promise((resolve, reject) => {
 			}
 			if (typeof <?php echo $str_adblock; ?>_top == 'object')
 			{
-				var <?php echo $str_adblock; ?>_top_h = <?php echo $str_adblock; ?>_top.offsetHeight
+				var <?php echo $str_adblock; ?>_top_h = <?php echo $str_adblock; ?>_top.offsetHeight;
 				if (parseInt(<?php echo $str_adblock; ?>_top_h) < parseInt(20))
 				{
 					<?php echo $str_adblock; ?>_4hide = true;
@@ -166,7 +166,7 @@ const <?php echo $str_adblock; ?>promise = new Promise((resolve, reject) => {
 			}
 			if (typeof <?php echo $str_adblock; ?>_app == 'object')
 			{
-				var <?php echo $str_adblock; ?>_app_h = <?php echo $str_adblock; ?>_app.offsetHeight
+				var <?php echo $str_adblock; ?>_app_h = <?php echo $str_adblock; ?>_app.offsetHeight;
 				if (parseInt(<?php echo $str_adblock; ?>_app_h) < parseInt(20))
 				{
 					<?php echo $str_adblock; ?>_4hide = true;
@@ -191,7 +191,7 @@ const <?php echo $str_adblock; ?>promise = new Promise((resolve, reject) => {
 				}
 			} else {
 					<?php echo $str_adblock; ?>aswf = true;
-				var <?php echo $str_adblock; ?>e1w = <?php echo $str_adblock; ?>e1.offsetWidth
+				var <?php echo $str_adblock; ?>e1w = <?php echo $str_adblock; ?>e1.offsetWidth;
 				if (parseInt(<?php echo $str_adblock; ?>e1w) < parseInt(20))
 				{
 					<?php echo $str_adblock; ?>_show("aswift_1_small_20"); //not show
