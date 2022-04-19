@@ -6,7 +6,7 @@
 
 【banana detect adblock】是一段由[banana(422658476)](https://github.com/422658476)(也就是我)编写，放在页面文件html中的“几乎”通用的adblock检测代码，它可能是至今为止唯一能够不停有效的检测并提示用户关闭正在运行的adblock扩展的检测代码，而它自身却能够不停逃避被adblock过滤掉的命运。
 
-事实上这段代码在[【软件No1 www.rjno1.com】](https://www.rjno1.com/)上已经被部署了好几年， 在这几年中，【banana detect adblock】在adblock的过滤代码维护者“每天”不停“测试”下，持续进行改进，从而变得越来越接近完美，越来越接近无懈可击，这么长时间的正常工作也证明了这段代码的有效性。
+事实上这段代码<!-- 在[【软件No1 www.rjno1.com】](https://www.rjno1.com/)上 -->已经被部署了好几年， 在这几年中，【banana detect adblock】在adblock的过滤代码维护者“每天”不停“测试”下，持续进行改进，从而变得越来越接近完美，越来越接近无懈可击，这么长时间的正常工作也证明了这段代码的有效性。
 
 **如果你正在烦恼：** adblock屏蔽掉了网站上的google广告或者其他广告，而又没有还手之力，需要一段检测adblock的代码来扭转这个局面，那么【banana detect adblock】可能是你的不二选择。
 
