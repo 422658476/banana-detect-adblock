@@ -18,7 +18,7 @@ In fact, this code has been deployed on [【软件No1 www.rjno1.com】](https://
 
 **If you are troubled:** adblock blocks google ads or other ads on the website, but there is no way to fight back, you need a piece of code to detect adblock to reverse this situation, then [banana detect adblock] may be your best choice. 
 
-浏览下方内容前可以先查看[【把互联网标准出卖给扩展（ublock、adblock、adguard或其他扩展）的浏览器企业 | Browser companies that sell Internet standards to extensions (ublock, adblock, adguard, or others)】](https://github.com/422658476/web-error)
+### 浏览下方内容前可以先查看我在github上的一篇文章[【把互联网标准出卖给扩展（ublock、adblock、adguard或其他扩展）的浏览器企业 | Browser companies that sell Internet standards to extensions (ublock, adblock, adguard, or others)】](https://github.com/422658476/web-error)
 
 ---
 ### ![](./detect-adblock-ui.png)
